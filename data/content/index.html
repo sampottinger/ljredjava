@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/ljredjava.css">
+        <script type="text/javascript" src="/js/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.js"></script>
+    </head>
+    <body>
+
+        <!-- Product descriptor -->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <a class="brand" href="#">LJRedJava</a>
+            </div>
+        </div>
+
+        <!-- Main layout -->
+        <div class="container-fluid"><div class="row-fluid">
+
+            <!-- Device listing -->
+            <div class="well span3" id="device-bar-container">
+                <div class="header">Devices</div>
+                <div id="device-bar">
+                    Please wait...
+                </div>
+            </div>
+
+            <!-- Pane for controlling selected device -->
+            <div class="span7" id="device-pane">
+
+                <!-- Top bar for showing general device info -->
+                <div class="device-info-pane">
+                    <div class="container-fluid"><div class="row-fluid">
+                        <div class="device-info-pane-box span5" id="device-general-info">
+                            <div class="header">Device Info</div>
+                            <div id="device-general-info-display"></div>
+                        </div>
+
+                        <div class="device-info-pane-box span5" id="device-general-info">
+                            <div class="header">Device Capabilities</div>
+                            <div id="device-capacity-display"></div>
+                        </div>
+                    </div></div>
+                </div>
+
+                <!-- Device control / status tabs listing -->
+                <ul class="nav nav-tabs" id="device-tabs">
+                  <li class="active"><a href="#status-tab">Status</a></li>
+                  <li><a href="#configuration-tab">Configuration</a></li>
+                  <li><a href="#extended-features-tab">Extended Features</a></li>
+                  <li><a href="#simple-logging-tab">Simple Logging</a></li>
+                </ul>
+
+                <!-- Device control / status tabs contents -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="status-tab">
+                        Please wait ...
+                    </div>
+                    <div class="tab-pane" id="configuration-tab">
+                        Please wait ...
+                    </div>
+                    <div class="tab-pane" id="extended-features-tab">
+                        Please wait ...
+                    </div>
+                    <div class="tab-pane" id="simple-logging-tab">
+                        Please wait ...
+                    </div>
+                </div>
+
+            </div>
+
+        </div></div>
+
+        <script>
+            $('#device-tabs a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
+
+    </body>
+</html>

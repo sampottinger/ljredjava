@@ -1,0 +1,17 @@
+.device-info-pane-box
+{
+    margin-bottom:50px;
+}
+
+.device-info-pane-box .header
+{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#device-bar-container .header
+{
+    font-size:18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
