@@ -9,9 +9,47 @@
     font-weight: bold;
 }
 
+.connect-btn
+{
+    font-size: 12px;
+    padding: 0px;
+}
+
 #device-bar-container .header
 {
     font-size:18px;
     padding-bottom: 10px;
     font-weight: bold;
+}
+
+#device-bar ul
+{
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+#device-bar li
+{
+    padding: 10px 3px 10px 3px;
+}
+
+#device-bar li :hover
+{
+    background-color: #E0E0E0;
+}
+
+#device-bar .device-info-box
+{
+    padding: 3px;
+}
+
+#device-bar .device-header
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#device-bar .device-detail
+{
+    font-size: 12px;
 }

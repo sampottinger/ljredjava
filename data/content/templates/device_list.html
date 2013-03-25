@@ -1,0 +1,32 @@
+<ul>
+{{#devices}}
+    <li>
+        <div id="device-entry-{{serial}}" class="device-info-box">
+            <div class="device-header">{{deviceType}}</div>
+            <div class="device-detail">serial: {{serialNumber}}</div>
+            {{#ethernetIP}}
+            <div class="device-detail">Ethernet: {{ethernetIP}}</div>
+            {{/ethernetIP}}
+            {{#wifiIP}}
+            <div class="device-detail">Wifi: {{wifiIP}}</div>
+            {{/wifiIP}}
+
+            {{#availableByUSB}}
+            <button class="btn btn-link connect-btn usb-btn" type="button">
+                Connect USB
+            </button>
+            {{/availableByUSB}}
+            {{#wifiIP}}
+            <button class="btn btn-link connect-btn wifi-btn" type="button">
+                Connect WiFi
+            </button>
+            {{/wifiIP}}
+            {{#ethernetIP}}
+            <button class="btn btn-link connect-btn ethernet-btn" type="button">
+                Connect Ethernet
+            </button>
+            {{/ethernetIP}}
+        </div>
+    </li>
+{{/devices}}
+</ul>
