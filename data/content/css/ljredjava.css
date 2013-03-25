@@ -15,6 +15,11 @@
     padding: 0px;
 }
 
+.device-high-level-info
+{
+    font-size: 12px;
+}
+
 #device-bar-container .header
 {
     font-size:18px;
